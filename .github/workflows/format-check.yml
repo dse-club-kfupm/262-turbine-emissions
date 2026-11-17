@@ -1,0 +1,25 @@
+name: format-check
+
+# Runs tests/check_submission.py with only the packages the grading
+# environment has, so a predict.py that imports anything else fails here.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the grading packages
+        run: pip install pandas numpy scikit-learn
+      - name: Check the submission format
+        run: python tests/check_submission.py

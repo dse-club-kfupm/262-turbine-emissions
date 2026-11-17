@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Data Engineering &amp; Science Club, KFUPM">
+  <title>Data Engineering &amp; Science Club, KFUPM</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#162a4f"/>
+      <stop offset="1" stop-color="#1d3a6b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#22457a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22457a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4aa7e6"/>
+      <stop offset="1" stop-color="#3fd0bc"/>
+    </linearGradient>
+    <linearGradient id="backA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a8bc4"/>
+      <stop offset="1" stop-color="#2f8fa3"/>
+    </linearGradient>
+    <linearGradient id="backB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e7aa6"/>
+      <stop offset="1" stop-color="#287287"/>
+    </linearGradient>
+    <linearGradient id="base" gradientUnits="userSpaceOnUse" x1="68" y1="0" x2="812" y2="0">
+      <stop offset="0" stop-color="#3dd2a8"/>
+      <stop offset="1" stop-color="#47abd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" rx="180" fill="url(#bg)"/>
+  <rect width="1000" height="1000" rx="180" fill="url(#glow)"/>
+  <g stroke="#5b8fd0" stroke-opacity="0.35" stroke-width="3" fill="#7fb2ec" fill-opacity="0.55">
+    <path d="M70 120 L150 175 L230 130 L190 230 L150 175 M150 175 L95 240 L190 230" fill="none"/>
+    <circle cx="70" cy="120" r="7" stroke="none"/>
+    <circle cx="150" cy="175" r="9" stroke="none"/>
+    <circle cx="230" cy="130" r="6" stroke="none"/>
+    <circle cx="190" cy="230" r="7" stroke="none"/>
+    <circle cx="95" cy="240" r="6" stroke="none"/>
+    <path d="M948 842 L890 895 L928 936 L862 942 L890 895" fill="none"/>
+    <circle cx="948" cy="842" r="6" stroke="none"/>
+    <circle cx="890" cy="895" r="9" stroke="none"/>
+    <circle cx="928" cy="936" r="6" stroke="none"/>
+    <circle cx="862" cy="942" r="6" stroke="none"/>
+  </g>
+  <g transform="translate(115 122) scale(0.88)">
+    <g stroke="#ffffff" stroke-opacity="0.2" stroke-width="3" stroke-linecap="round">
+      <line x1="62" y1="253" x2="815" y2="253"/>
+      <line x1="62" y1="413" x2="815" y2="413"/>
+      <line x1="62" y1="577" x2="815" y2="577"/>
+    </g>
+    <g stroke="#1a335d" stroke-width="10" stroke-linejoin="round" paint-order="stroke">
+      <path d="M282 372 L330 350 Q342 540 352 735 L312 735 Q300 540 282 372 Z" fill="url(#backB)"/>
+      <path d="M385 230 L435 222 Q436 480 438 735 L398 735 Q392 480 385 230 Z" fill="url(#backA)"/>
+      <path d="M505 178 L558 190 Q556 520 525 735 L487 735 Q508 480 505 178 Z" fill="url(#backA)"/>
+      <path d="M545 402 L590 425 Q580 580 570 735 L528 735 Q540 580 545 402 Z" fill="url(#backB)"/>
+      <path d="M310 125 L366 110 Q366 430 392 735 L355 735 Q318 440 310 125 Z" fill="url(#front)"/>
+      <path d="M445 63 L505 68 Q497 400 480 735 L442 735 Q440 400 445 63 Z" fill="url(#front)"/>
+    </g>
+    <line x1="68" y1="781" x2="812" y2="781" stroke="url(#base)" stroke-width="16" stroke-linecap="round"/>
+  </g>
+</svg>
