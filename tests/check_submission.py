@@ -12,8 +12,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-DROP = ['home_score', 'away_score', 'result']
-ALLOWED = ['home_win', 'draw', 'away_win']
+DROP = ['NOX']
+ALLOWED = None
 
 
 def main() -> int:

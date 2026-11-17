@@ -1,7 +1,7 @@
-"""Submission entry point for 262-world-cup-oracle.
+"""Submission entry point for 262-turbine-emissions.
 
 The committee calls predict(df) once on the hidden test set. df has the test
-columns described in the README. Return one of "home_win", "draw" or "away_win" per row,
+columns described in the README. Return a number (NOx in mg/m³) per row,
 in the same order as the rows of df.
 
 predict.py may load a model saved in models/ or train one from data/train.csv
@@ -17,6 +17,7 @@ TRAIN_PATH = REPO_ROOT / "data" / "train.csv"
 
 
 def predict(df: pd.DataFrame) -> list:
-    # Baseline: always predict a win for the first-listed team.
+    # Baseline: the training average of NOX.
     # Replace this with your model.
-    return ["home_win"] * len(df)
+    train = pd.read_csv(TRAIN_PATH)
+    return [float(train["NOX"].mean())] * len(df)
